@@ -26,7 +26,11 @@ function oneclear(){
 }
 
 function forequal(){
+    try{
     document.querySelector(".screen").value=eval(document.querySelector(".screen").value);
+    }
+    catch(e){
+        document.querySelector(".screen").value="Error"}
 }
 
 document.querySelector(".ac").addEventListener("click",allclear);
